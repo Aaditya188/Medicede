@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Write Prescription</title>
+  </head>
+
+
+  <body>
+  <div class="content">
+    <div class="container">
+      <div class="row align-items-stretch justify-content-center no-gutters">
+        <div class="col-md-7">
+          <div class="form h-100 contact-wrap p-5">
+            <h3 class="text-center">Write you Prescription!</h3>
+            <form class="mb-5" name="sentMessage" method="post" action="" id="contactForm">
+
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="budget" class="col-form-label">Date *</label>
+                  <input type="text" class="form-control" name="date" id="date" placeholder="DD/MM/YYYY">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Doctor Name *</label>
+                  <input type="text" class="form-control" name="docname" id="docname" placeholder="Doctor name">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Patient Name *</label>
+                  <input type="text" class="form-control" name="patname" id="patname" placeholder="Patient Name">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="budget" class="col-form-label">Symptoms</label>
+                  <input type="text" class="form-control" name="symp" id="symp" placeholder="Symptoms (if any)">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="budget" class="col-form-label">Any Test Suggestions ? </label>
+                  <input type="text" class="form-control" name="sugg" id="sugg" placeholder="Suggestions (if any)">
+                </div>
+              </div>
+
+              <div class="row mb-5">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="message" class="col-form-label">Medications</label>
+                  <input type="text" class="form-control" name="med" id="med" placeholder="Medications (if any)">
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-5 form-group text-center">
+                  <button id="button" type="submit" class="btn btn-block btn-primary rounded-0 py-2 px-4">Generate Presc.</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+  <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyB_uZkfIWQBoD4DlDTnj_zDAVvAtZkKlX8",
+        authDomain: "govtsewa-d6fc4.firebaseapp.com",
+        databaseURL: "https://govtsewa-d6fc4-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "govtsewa-d6fc4",
+        storageBucket: "govtsewa-d6fc4.appspot.com",
+        messagingSenderId: "360650927524",
+        appId: "1:360650927524:web:d82c765890cf9316cce531"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+  </script>
+
+    <script src="js/jspdf.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact_me3.js"></script>
+
+  </body>
+</html>
