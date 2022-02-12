@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from androthemes.com/themes/html/medjestic/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Feb 2022 10:23:52 GMT -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>medicede</title>
+  <!-- Iconic Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="vendors/iconic-fonts/font-awesome/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendors/iconic-fonts/flat-icons/flaticon.css">
+  <link rel="stylesheet" href="vendors/iconic-fonts/cryptocoins/cryptocoins.css">
+  <link rel="stylesheet" href="vendors/iconic-fonts/cryptocoins/cryptocoins-colors.css">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery UI -->
+  <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
+  <!-- Page Specific CSS (Slick Slider.css) -->
+  <link href="assets/css/slick.css" rel="stylesheet">
+  <!-- medjestic styles -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Page Specific CSS (Morris Charts.css) -->
+  <link href="assets/css/morris.css" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+</head>
+
+<body class="ms-body ms-aside-left-open ms-primary-theme ms-has-quickbar">
+  <!-- Setting Panel -->
+  <div class="ms-toggler ms-settings-toggle ms-d-block-lg">
+    <i class="flaticon-gear"></i>
+  </div>
+  <div class="ms-settings-panel ms-d-block-lg">
+    <div class="row">
+      <div class="col-xl-4 col-md-4">
+        <h4 class="section-title">Customize</h4>
+        <div>
+          <label class="ms-switch">
+            <input type="checkbox" id="dark-mode">
+            <span class="ms-switch-slider round"></span>
+          </label>
+          <span> Dark Mode </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Preloader -->
+  <div id="preloader-wrap">
+    <div class="spinner spinner-8">
+      <div class="ms-circle1 ms-child"></div>
+      <div class="ms-circle2 ms-child"></div>
+      <div class="ms-circle3 ms-child"></div>
+      <div class="ms-circle4 ms-child"></div>
+      <div class="ms-circle5 ms-child"></div>
+      <div class="ms-circle6 ms-child"></div>
+      <div class="ms-circle7 ms-child"></div>
+      <div class="ms-circle8 ms-child"></div>
+      <div class="ms-circle9 ms-child"></div>
+      <div class="ms-circle10 ms-child"></div>
+      <div class="ms-circle11 ms-child"></div>
+      <div class="ms-circle12 ms-child"></div>
+    </div>
+  </div>
+  <!-- Overlays -->
+  <div class="ms-aside-overlay ms-overlay-left ms-toggler" data-target="#ms-side-nav" data-toggle="slideLeft"></div>
+  <div class="ms-aside-overlay ms-overlay-right ms-toggler" data-target="#ms-recent-activity" data-toggle="slideRight"></div>
+  <!-- Sidebar Navigation Left -->
+  <aside id="ms-side-nav" class="side-nav fixed ms-aside-scrollable ms-aside-left">
+    <!-- Logo -->
+    <div class="logo-sn ms-d-block-lg">
+      <a class="pl-0 ml-0 text-center" href="index-2.html"> <img src="assets/img/medicede.png" alt="logo"> </a>
+      <a href="#" class="text-center ms-logo-img-link"> <img src="assets/img/dashboard/doctor-3.jpg" alt="logo"></a>
+      <h5 class="text-center text-white mt-2">Dr.Samuel</h5>
+      <h6 class="text-center text-white mb-3">Admin</h6>
+    </div>
+    <!-- Navigation -->
+    <ul class="accordion ms-main-aside fs-14" id="side-nav-accordion">
+      <!-- Dashboard -->
+      <li class="menu-item">
+        <a href="../../index.html" data-toggle="collapse" data-target="#dashboard" aria-expanded="false" aria-controls="dashboard">
+          <span><i class="material-icons fs-16">dashboard</i>Dashboard</span>
+        </a>
+      </li>
+      <!-- /Dashboard -->
+     
+      <!-- Patient -->
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#patient" aria-expanded="false" aria-controls="patient">
+          <span><i class="fas fa-user"></i>Patient</span>
+        </a>
+        <ul id="patient" class="collapse" aria-labelledby="patient" data-parent="#side-nav-accordion">
+          <li> <a href="../pages/patient/add-patient.html">Add Patient</a> </li>
+          <li> <a href="../pages/patient/patient-list.html">Patient List</a> </li>
+        </ul>
+      </li>
+      <!-- /Patient -->
+     
+      <!-- Report -->
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#report" aria-expanded="false" aria-controls="report">
+          <span><i class="fas fa-file-alt"></i>Report</span>
+        </a>
+        <ul id="report" class="collapse" aria-labelledby="report" data-parent="#side-nav-accordion">
+          <li> <a href="../pages/report/patient-report.html">Patient Wise Report</a> </li>
+        </ul>
+      </li>
+      <!-- /Report -->
+      
+    </ul>
+  </aside>
+  <!-- Main Content -->
+  <main class="body-content">
+    <!-- Navigation Bar -->
+    <nav class="navbar ms-navbar">
+      <div class="ms-aside-toggler ms-toggler pl-0" data-target="#ms-side-nav" data-toggle="slideLeft">
+        <span class="ms-toggler-bar bg-white"></span>
+        <span class="ms-toggler-bar bg-white"></span>
+        <span class="ms-toggler-bar bg-white"></span>
+      </div>
+      <div class="logo-sn logo-sm ms-d-block-sm">
+        <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index-2.html"><img src="assets/img/medjestic-logo-84x41.png" alt="logo"> </a>
+      </div>
+      <ul class="ms-nav-list ms-inline mb-0" id="ms-nav-options">
+
+        <li class="ms-nav-item  ms-d-none">
+          <a href="#report1" class="text-white" data-toggle="modal"><i class="flaticon-spreadsheet mr-2"></i> Generate Prescription</a>
+        </li>
+        
+        <li class="ms-nav-item ms-d-none">
+          <a href="#prescription" class="text-white" data-toggle="modal"><i class="flaticon-list mr-2"></i> Upload Patient Report</a>
+        </li>
+
+        
+        <li class="ms-nav-item ms-nav-user dropdown">
+          <a href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="ms-user-img ms-img-round float-right" src="assets/img/dashboard/doctor-3.jpg" alt="people"> </a>
+          <ul class="dropdown-menu dropdown-menu-right user-dropdown" aria-labelledby="userDropdown">
+            <li class="dropdown-menu-header">
+              <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, Dr Samuel Deo</span></h6>
+            </li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-menu-footer">
+              <a class="media fs-14 p-2" href="pages/prebuilt-pages/lock-screen.html"> <span><i class="flaticon-security mr-2"></i> Lock</span> </a>
+            </li>
+            <li class="dropdown-menu-footer">
+              <a class="media fs-14 p-2" href="pages/prebuilt-pages/default-login.html"> <span><i class="flaticon-shut-down mr-2"></i> Logout</span> </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="ms-toggler ms-d-block-sm pr-0 ms-nav-toggler" data-toggle="slideDown" data-target="#ms-nav-options">
+        <span class="ms-toggler-bar bg-white"></span>
+        <span class="ms-toggler-bar bg-white"></span>
+        <span class="ms-toggler-bar bg-white"></span>
+      </div>
+    </nav>
+    <!-- Body Content Wrapper -->
+    <div class="ms-content-wrapper">
+      <div class="row">
+        <!-- Notifications Widgets -->
+        <div class="col-xl-6 col-lg-6 col-md-12">
+          <div class="ms-card ms-widget has-graph-full-width ms-infographics-widget">
+            <div class="ms-card-body media">
+              <div class="media-body">
+                <h6 class="bold">Appointments</h6>
+                <h3><strong>3,973</strong></h3>
+              </div>
+            </div>
+            <canvas id="line-chart-2"></canvas>
+          </div>
+
+          <div class="ms-card ms-widget has-graph-full-width ms-infographics-widget">
+            <div class="ms-card-body media">
+              <div class="media-body">
+                <h6>New Patients</h6>
+                <h3><strong>593</strong></h3>
+              </div>
+            </div>
+            <canvas id="line-chart-3"></canvas>
+          </div>
+
+          <div class="ms-card ms-widget has-graph-full-width ms-infographics-widget">
+            <div class="ms-card-body media">
+              <div class="media-body">
+                <h6 class="bold">Hospital Earning</h6>
+                <h3><strong>3,973</strong></h3>
+              </div>
+            </div>
+            <canvas id="line-chart-4"></canvas>
+          </div>
+
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-12">
+          <div class="ms-panel ms-panel-fh">
+            <div class="ms-panel-body calendar-wedgit">
+              <div id="calendar"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12">
+          <div class="ms-panel ms-device-sessions ms-quick-mic">
+            <div class="ms-panel-header">
+              <h6>Hospital Birth & Death Analytics</h6>
+            </div>
+            <div class="ms-panel-body">
+              <div class="row">
+                <div class="col-xl-4 col-md-4 col-sm-4 col-6 ms-device">
+                  <i class="material-icons">airline_seat_flat</i>
+                  <h4>Birth</h4>
+                  <p class="ms-text-primary">45.07%</p>
+                  <span class="ms-text-primary">201,434</span>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-4 col-6 ms-device">
+                  <i class="material-icons">airline_seat_individual_suite</i>
+                  <h4>Death</h4>
+                  <p class="ms-text-danger">29.05%</p>
+                  <span class="ms-text-danger">134,693</span>
+                </div>
+                <div class="col-xl-4 col-md-4 col-sm-4 col-6 ms-device">
+                  <i class="material-icons">accessible</i>
+                  <h4>Accidents</h4>
+                  <p class="ms-text-warning">18.43%</p>
+                  <span class="ms-text-warning">81,525</span>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 45.07%" aria-valuenow="45.07" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 29.05%" aria-valuenow="29.05" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 25.48%" aria-valuenow="25.48" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+     
+
+
+        <div class="col-xl-6 col-md-12">
+          <div class="ms-panel">
+            <div class="ms-panel-header">
+              <h6>Patient In</h6>
+            </div>
+            <div class="ms-panel-body">
+              <canvas id="bar-chart-grouped" height=105></canvas>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-12 col-md-12">
+          <div class="ms-panel">
+            <div class="ms-panel-header">
+              <h6>Upcoming Appointments</h6>
+            </div>
+            <div class="ms-panel-body">
+              <div class="table-responsive">
+                <table class="table table-hover thead-primary">
+                  <thead>
+                    <tr>
+                      <th scope="col">Patient</th>
+                      <th scope="col">Doctor</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Timing</th>
+                      <th scope="col">Contact</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-1.jpg" alt="people"> Sidharth Gupta</td>
+                      <td>Dr. Cristina Groves</td>
+                      <td>01 Dec 2019</td>
+                      <td>5:00 PM</td>
+                      <td>8789654123</td>
+                      <td><label class="ms-switch">
+                          <input type="checkbox" checked="">
+                          <span class="ms-switch-slider ms-switch-success round"></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-5.jpg" alt="people"> Aneesha Sahay </td>
+                      <td>Dr. Richard Miles</td>
+                      <td>01 Dec 2019</td>
+                      <td>8:00 AM</td>
+                      <td>6654654991</td>
+                      <td><label class="ms-switch">
+                          <input type="checkbox" checked="">
+                          <span class="ms-switch-slider ms-switch-success round"></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-6.jpg" alt="people"> John Ankit Singh </td>
+                      <td>Dr. Andrew </td>
+                      <td>01 Dec 2019</td>
+                      <td>10:00 AM</td>
+                      <td>7092545445</td>
+                      <td><label class="ms-switch">
+                          <input type="checkbox">
+                          <span class="ms-switch-slider ms-switch-success round"></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-8.jpg" alt="people"> Atharva Pathak </td>
+                      <td>Dr. Robert </td>
+                      <td>01 Dec 2019</td>
+                      <td>2:00 PM</td>
+                      <td>8102225333</td>
+                      <td><label class="ms-switch">
+                          <input type="checkbox" checked="">
+                          <span class="ms-switch-slider ms-switch-success round"></span>
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-1.jpg" alt="people"> Simran Chandani </td>
+                      <td>Dr. Adwerd</td>
+                      <td>07 Dec 2019</td>
+                      <td>5:00 PM</td>
+                      <td>7222111356</td>
+                      <td><label class="ms-switch">
+                          <input type="checkbox">
+                          <span class="ms-switch-slider ms-switch-success round"></span>
+                        </label>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-xl-6 col-md-12" style="display: none;">
+          <div class="ms-panel">
+            <div class="ms-panel-header">
+              <h6>Patient Total</h6>
+            </div>
+            <div class="ms-panel-body">
+              <canvas id="line-chart"></canvas>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-10 col-lg-12">
+          <div class="ms-panel ms-panel-fh ms-facebook-engagements">
+            <div class="ms-panel-header">
+              <h6>Doctor Engagements</h6>
+            </div>
+            <div class="ms-panel-body p-0">
+              <div class="ms-facebook-page-selection">
+                <p class="ms-text-dark">Jan 25, 2020 to Feb 02, 2020</p>
+                <p>Jan 18, 2020 to Feb 24, 2020 (Prev)</p>
+
+                <div class="dropdown">
+                  <a href="#" class="has-chevron" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctor Name here</a>
+                  <ul class="dropdown-menu">
+                    <li class="ms-dropdown-list">
+                      <a class="media p-2" href="#">
+                        <div class="media-body">
+                          <span>Doctor 1</span>
+                        </div>
+                      </a>
+                      <a class="media p-2" href="#">
+                        <div class="media-body">
+                          <span>Doctor 2</span>
+                        </div>
+                      </a>
+                      <a class="media p-2" href="#">
+                        <div class="media-body">
+                          <span>Doctor 3</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="ms-list clearfix">
+                <li class="ms-list-item">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div class="ms-graph-meta">
+                      <h2>Weekday Engagement</h2>
+                      <p class="ms-text-dark">45.07%</p>
+                      <p class="ms-text-success">+28.44%</p>
+                      <p>VS 66.68% (Prev)</p>
+                    </div>
+                    <div class="ms-graph-canvas">
+                      <canvas id="engaged-users"></canvas>
+                    </div>
+                  </div>
+                </li>
+                <li class="ms-list-item">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <div class="ms-graph-meta">
+                      <h2>Weekend Engagement</h2>
+                      <p class="ms-text-dark">45.07%</p>
+                      <p class="ms-text-success">+28.44%</p>
+                      <p>VS 66.68% (Prev)</p>
+                    </div>
+                    <div class="ms-graph-canvas">
+                      <canvas id="page-impressions"></canvas>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-12 col-md-12">
+          <div class="ms-panel">
+            <div class="ms-panel-header">
+              <h6>New Patients</h6>
+            </div>
+            <div class="ms-panel-body">
+              <div class="table-responsive">
+                <table class="table table-hover  thead-primary">
+                  <thead>
+                    <tr>
+                      <th scope="col">Patient</th>
+                      <th scope="col">E-mail Id</th>
+                      <th scope="col">Contact</th>
+                      <th scope="col">Disease</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-3.jpg" alt="people"> Sidharth Gupta </td>
+                      <td>sidharth288@gmail.com</td>
+                      <td>6987008756</td>
+                      <td>Fever</td>
+                    </tr>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-2.jpg" alt="people"> Aneesha Sahay </td>
+                      <td>sahayaneesha@gmail.com</td>
+                      <td>9874680112</td>
+                      <td>Eye</td>
+                    </tr>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-4.jpg" alt="people"> Ankit Singh </td>
+                      <td>singh783@gmail.com</td>
+                      <td>9617384607</td>
+                      <td>Typhoid</td>
+                    </tr>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-5.jpg" alt="people"> Atharva Pathak </td>
+                      <td>atharvacool@gmail.com</td>
+                      <td>8716482341</td>
+                      <td>Cancer</td>
+                    </tr>
+                    <tr>
+                      <td class="ms-table-f-w"> <img src="assets/img/dashboard/patient-1.jpg" alt="people"> Simran Chandani </td>
+                      <td>simmiloves@gmail.com</td>
+                      <td>9716843918</td>
+                      <td>Diabetes</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- MODALS -->
+
+  <div class="modal fade" id="prescription" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog ms-modal-dialog-width">
+      <div class="modal-content ms-modal-content-width">
+        <div class="modal-header  ms-modal-header-radius-0">
+          <h4 class="modal-title text-white">Upload Patient Report</h4>
+          <button type="button" class="close  text-white" data-dismiss="modal" aria-hidden="true">x</button>
+        </div>
+
+              <div class="modal-body p-0 text-left">
+                <div class="col-xl-12 col-md-12">
+                  <div class="ms-panel ms-panel-bshadow-none">
+                    <div class="ms-panel-header">
+                      <h6>Patient Report Upload</h6>
+                    </div>
+                    <div class="ms-panel-body">
+                      <form class="needs-validation" novalidate>
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom01">Patient ID</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="patid" placeholder="Patient ID" required>
+
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom02">Report Name</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="repo" placeholder="Report Name" required>
+                            </div>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="validationCustom03">Date of Issue</label>
+                            <div class="input-group">
+                              <input type="text" class="form-control" id="doi" placeholder="Issue Date (DD/MM/YYYY)" required>
+
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+
+                  <div class="col-md-6 mb-3">
+                      <label >Upload a Report</label>
+                      <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="image">
+                          <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                      </div>
+                      <a style="color: white;" class="btn btn-warning mt-4 d-inline w-20" type="submit" onclick="upload()">Upload Report</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="report1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog ms-modal-dialog-width">
+      <div class="modal-content ms-modal-content-width">
+        <div class="modal-header  ms-modal-header-radius-0">
+          <h4 class="modal-title text-white">Make a prescription</h4>
+          <button type="button" class="close  text-white" data-dismiss="modal" aria-hidden="true">x</button>
+        </div>
+
+        <div class="modal-body p-0 text-left">
+          <div class="col-xl-12 col-md-12">
+            <div class="ms-panel ms-panel-bshadow-none">
+              <div class="ms-panel-body">
+
+              <form class="mb-5" name="sentMessage" method="post" action="" id="contactForm">
+                  <div class="row">
+                    <div class="col-md-12 form-group mb-3">
+                      <label for="budget" class="col-form-label">Date *</label>
+                      <input type="text" class="form-control" name="date" id="date" placeholder="DD/MM/YYYY">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 form-group mb-3">
+                      <label for="" class="col-form-label">Doctor Name *</label>
+                      <input type="text" class="form-control" name="docname" id="docname" placeholder="Doctor name">
+                    </div>
+                    <div class="col-md-6 form-group mb-3">
+                      <label for="" class="col-form-label">Patient Name *</label>
+                      <input type="text" class="form-control" name="patname" id="patname" placeholder="Patient Name">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 form-group mb-3">
+                      <label for="budget" class="col-form-label">Symptoms</label>
+                      <input type="text" class="form-control" name="symp" id="symp" placeholder="Symptoms (if any)">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 form-group mb-3">
+                      <label for="budget" class="col-form-label">Any Test Suggestions ? </label>
+                      <input type="text" class="form-control" name="sugg" id="sugg" placeholder="Suggestions (if any)">
+                    </div>
+                  </div>
+
+                  <div class="row mb-5">
+                    <div class="col-md-12 form-group mb-3">
+                      <label for="message" class="col-form-label">Medications</label>
+                      <input type="text" class="form-control" name="med" id="med" placeholder="Medications (if any)">
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-md-5 form-group text-center">
+                      <button type="submit" class="btn btn-warning mt-4 d-inline w-20">Generate Prescription</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script> 
+
+<script>
+
+var firebaseConfig = {
+        apiKey: "AIzaSyB_uZkfIWQBoD4DlDTnj_zDAVvAtZkKlX8",
+        authDomain: "govtsewa-d6fc4.firebaseapp.com",
+        databaseURL: "https://govtsewa-d6fc4-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "govtsewa-d6fc4",
+        storageBucket: "govtsewa-d6fc4.appspot.com",
+        messagingSenderId: "360650927524",
+        appId: "1:360650927524:web:d82c765890cf9316cce531"
+	};
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script>
+    function upload() 
+    {
+      var image=document.getElementById("image").files[0];
+      var id = document.getElementById("patid").value;
+      var doi = document.getElementById("doi").value;
+      var repo = document.getElementById("repo").value;
+      var imageName=image.name;
+      var storageRef=firebase.storage().ref('Report/' + id + '/' + repo );
+      var uploadTask=storageRef.put(image);
+      uploadTask.on('state_changed',function (snapshot) 
+      {
+          var progress=(snapshot.bytesTransferred/snapshot.totalBytes)*100;
+          console.log("upload is " + progress +" done");
+      },function (error) {
+          console.log(error.message);
+      },function () 
+      {
+          uploadTask.snapshot.ref.getDownloadURL().then(function (downlaodURL) {
+            firebase.database().ref('Patients/'+id).update({
+                  ReportName: repo,
+                  RepoDOI: doi,
+                  UR: downlaodURL
+               });
+               alert("Report Uploaded for Patient ID : " + id)
+          });
+      });
+}
+</script>
+
+
+  <!-- SCRIPTS -->
+  <!-- Global Required Scripts Start -->
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/perfect-scrollbar.js"> </script>
+  <script src="assets/js/jquery-ui.min.js"> </script>
+
+  <!-- Global Required Scripts End -->
+  <script src="assets/js/d3.v3.min.js"> </script>
+  <script src="assets/js/topojson.v1.min.js"> </script>
+  <script src="assets/js/datamaps.all.min.js"> </script>
+
+  <!-- Page Specific Scripts Start -->
+  <script src="assets/js/slick.min.js"> </script>
+  <script src="assets/js/moment.js"> </script>
+  <script src="assets/js/jquery.webticker.min.js"> </script>
+  <script src="assets/js/Chart.bundle.min.js"> </script>
+  <script src="assets/js/index-chart.js"> </script>
+
+
+  <script src="Prescription/js/jspdf.min.js"></script>
+  <script src="Prescription/js/jquery-3.3.1.min.js"></script>
+  <script src="Prescription/js/popper.min.js"></script>
+  <script src="Prescription/js/bootstrap.min.js"></script>
+  <script src="Prescription/js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="Prescription/js/jqBootstrapValidation.js"></script>
+  <script type="text/javascript" src="Prescription/js/contact_me3.js"></script>
+
+
+  <!-- Page Specific Scripts Finish -->
+  <script src="assets/js/calendar.js"></script>
+  <!-- medjestic core JavaScript -->
+  <script src="assets/js/framework.js"></script>
+  <!-- Settings -->
+  <script src="assets/js/settings.js"></script>
+</body>
+
+  <script>
+      document.addEventListener("keyup", function(event) {
+      if (event.keyCode === 76) {
+            window.location.href="pages/prebuilt-pages/lock-screen.html"
+        }
+    });
+  </script>
+
+
+<!-- Mirrored from androthemes.com/themes/html/medjestic/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Feb 2022 10:27:29 GMT -->
+</html>
