@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table V01</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body onload="showContent1()">
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100">
+					<table>
+						<thead>
+							<tr class="table100-head">
+								<th class="column1">License ID</th>
+								<th class="column2">Hospital Name</th>
+								<th class="column3">Hospital Address</th>
+							</tr>
+						</thead>
+						<tbody  id="app2">
+							<tr></tr>
+						</tbody>
+					</table>
+				</div>
+					<template id="sample2">
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</template>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+	<script>
+		var firebaseConfig = {
+		  apiKey: "AIzaSyB_uZkfIWQBoD4DlDTnj_zDAVvAtZkKlX8",
+		  authDomain: "govtsewa-d6fc4.firebaseapp.com",
+		  databaseURL: "https://govtsewa-d6fc4-default-rtdb.asia-southeast1.firebasedatabase.app",
+		  projectId: "govtsewa-d6fc4",
+		  storageBucket: "govtsewa-d6fc4.appspot.com",
+		  messagingSenderId: "360650927524",
+		  appId: "1:360650927524:web:d82c765890cf9316cce531"
+		};
+		firebase.initializeApp(firebaseConfig);
+
+		function showContent1(){
+			var temp1,copyHTML1,td1;
+			firebase.database().ref('Hospitals/').on('value', function(snapshot){
+			snapshot.forEach(function(childNodes){
+					temp1 = document.getElementById("sample2").content;
+					copyHTML1 = document.importNode(temp1,true);
+					td = copyHTML1.querySelectorAll("td");
+					td[2].innerHTML = childNodes.val().HospitalAddress;
+					td[1].innerHTML = childNodes.val().HospitalName;
+					td[0].innerHTML = childNodes.val().LicenseID;
+					document.getElementById("app2").appendChild(copyHTML1);
+					});
+				});
+			}
+  
+	</script>
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

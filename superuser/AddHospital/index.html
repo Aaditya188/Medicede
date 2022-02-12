@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Add Hospital</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Add a Hospital
+				</span>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Enter License ID">
+					<span class="label-input100">Hospital License ID</span>
+					<input class="input100" type="text" name="name" id="licid" placeholder="License ID">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1" data-validate="Enter Hospital Name">
+					<span class="label-input100">Hospital Name</span>
+					<input class="input100" type="text" name="name" id="hname" placeholder="Hospital Name">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Hospital Address">
+					<span class="label-input100">Hospital Address</span>
+					<input class="input100" type="text" name="Address" id="address" placeholder="Hospital Address">
+				</div>
+
+				<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Maps Link">
+					<span class="label-input100">Hospital Address Link</span>
+					<input class="input100" type="text" name="link" id="link" placeholder="Maps Link">
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<a class="contact100-form-btn" onclick="submitform()" style="color: white;">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+	<script>
+		var firebaseConfig = {
+		  apiKey: "AIzaSyB_uZkfIWQBoD4DlDTnj_zDAVvAtZkKlX8",
+		  authDomain: "govtsewa-d6fc4.firebaseapp.com",
+		  databaseURL: "https://govtsewa-d6fc4-default-rtdb.asia-southeast1.firebasedatabase.app",
+		  projectId: "govtsewa-d6fc4",
+		  storageBucket: "govtsewa-d6fc4.appspot.com",
+		  messagingSenderId: "360650927524",
+		  appId: "1:360650927524:web:d82c765890cf9316cce531"
+		};
+		firebase.initializeApp(firebaseConfig);
+  
+	</script>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
