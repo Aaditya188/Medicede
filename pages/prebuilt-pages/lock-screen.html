@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<!-- Mirrored from androthemes.com/themes/html/medjestic/pages/prebuilt-pages/lock-screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Feb 2022 10:30:35 GMT -->
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Medjestic</title>
+      <!-- Iconic Fonts -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="../../vendors/iconic-fonts/font-awesome/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../vendors/iconic-fonts/flat-icons/flaticon.css">
+      <link rel="stylesheet" href="../../vendors/iconic-fonts/cryptocoins/cryptocoins.css">
+      <link rel="stylesheet" href="../../vendors/iconic-fonts/cryptocoins/cryptocoins-colors.css">
+      <!-- Bootstrap core CSS -->
+      <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+      <!-- jQuery UI -->
+      <link href="../../assets/css/jquery-ui.min.css" rel="stylesheet">
+      <!-- Medjestic styles -->
+      <link href="../../assets/css/style.css" rel="stylesheet">
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" sizes="32x32" href="../../favicon.ico">
+   </head>
+   <body class="ms-body ms-primary-theme" onload="datetime()">
+      <!-- Preloader -->
+      <div id="preloader-wrap">
+         <div class="spinner spinner-8">
+            <div class="ms-circle1 ms-child"></div>
+            <div class="ms-circle2 ms-child"></div>
+            <div class="ms-circle3 ms-child"></div>
+            <div class="ms-circle4 ms-child"></div>
+            <div class="ms-circle5 ms-child"></div>
+            <div class="ms-circle6 ms-child"></div>
+            <div class="ms-circle7 ms-child"></div>
+            <div class="ms-circle8 ms-child"></div>
+            <div class="ms-circle9 ms-child"></div>
+            <div class="ms-circle10 ms-child"></div>
+            <div class="ms-circle11 ms-child"></div>
+            <div class="ms-circle12 ms-child"></div>
+         </div>
+      </div>
+      <div class="ms-lock-screen-weather">
+         <p>37&deg;</p>
+         <p>Chennai, IN</p>
+      </div>
+      <!-- Main Content -->
+      <main class="body-content ms-lock-screen">
+         <!-- Body Content Wrapper -->
+         <div class="ms-content-wrapper">
+            <img class="ms-user-img ms-img-round ms-lock-screen-user" src="../../assets/img/dashboard/doctor-1.jpg" alt="people">
+            <h1>Naveen Singh</h1>
+            <form method="post">
+               <div class="ms-form-group my-0 mb-0 has-icon fs-14">
+                  <input type="password" class="ms-form-input" name="pin" placeholder="Enter Pin" id="pin" value="">
+                  <i class="material-icons">security</i>
+               </div>
+               <a id="pinverify" class="btn btn-success w-100">Unlock</a>
+            </form>
+         </div>
+      </main>
+      <div class="ms-lock-screen-time">
+         <p id="time"></p>
+         <p id="datea"></p>
+      </div>
+      <!-- SCRIPTS -->
+      <!-- Global Required Scripts Start -->
+      <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+      <script src="../../assets/js/popper.min.js"></script>
+      <script src="../../assets/js/bootstrap.min.js"></script>
+      <script src="../../assets/js/perfect-scrollbar.js"> </script>
+      <script src="../../assets/js/jquery-ui.min.js"> </script>
+      <!-- Global Required Scripts End -->
+      <!-- Medjestic core JavaScript -->
+      <script src="../../assets/js/framework.js"></script>
+      <!-- Settings -->
+      <script src="../../assets/js/settings.js"></script>
+   </body>
+   <script>
+     function datetime()
+     {
+       document.getElementById('time').innerHTML = new Date().toLocaleTimeString('en-US', { hour12: false, hour: "numeric", minute: "numeric"});
+        var today = new Date();
+        var dd = today.getDate();
+
+        var mm = today.getMonth()+1; 
+        var yyyy = today.getFullYear();
+        if(dd<10) 
+        {
+            dd='0'+dd;
+        } 
+
+        if(mm<10) 
+        {
+            mm='0'+mm;
+        }
+        today = dd+'-'+mm+'-'+yyyy;
+       document.getElementById('datea').innerHTML = today;
+     }
+
+    document.getElementById('pinverify').addEventListener('click', function() {
+       var pin =  document.getElementById('pin').value;
+       var veripin = 123456;
+       if( pin == veripin )
+       {
+         window.location.href="../../index.html";
+       }
+       else
+       {
+         alert('Pin Incorrect');
+       }
+
+    });
+   </script>
+<!-- Mirrored from androthemes.com/themes/html/medjestic/pages/prebuilt-pages/lock-screen.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Feb 2022 10:30:35 GMT -->
+</html>
