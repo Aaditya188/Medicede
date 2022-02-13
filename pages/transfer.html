@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<!-- Mirrored from androthemes.com/themes/html/medjestic/pages/report/patient-report.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 11 Feb 2022 10:28:56 GMT -->
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>medicede</title>
+      <!-- Iconic Fonts -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="../../vendors/iconic-fonts/font-awesome/css/all.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../vendors/iconic-fonts/flat-icons/flaticon.css">
+      <link rel="stylesheet" href="../../vendors/iconic-fonts/cryptocoins/cryptocoins.css">
+      <link rel="stylesheet" href="../../vendors/iconic-fonts/cryptocoins/cryptocoins-colors.css">
+      <!-- Bootstrap core CSS -->
+      <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+      <!-- jQuery UI -->
+      <link href="../../assets/css/jquery-ui.min.css" rel="stylesheet">
+      <!-- Page Specific CSS (Slick Slider.css) -->
+      <link href="../../assets/css/slick.css" rel="stylesheet">
+      <!-- Medjestic styles -->
+      <link href="../../assets/css/style.css" rel="stylesheet">
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/png" sizes="32x32" href="../../favicon.ico">
+   </head>
+   <body class="ms-body ms-aside-left-open ms-primary-theme ms-has-quickbar" onload="showContent1()"> 
+      <!-- Setting Panel -->
+      <div class="ms-toggler ms-settings-toggle ms-d-block-lg">
+         <i class="flaticon-gear"></i>
+      </div>
+      <div class="ms-settings-panel ms-d-block-lg">
+         <div class="row">
+            <div class="col-xl-4 col-md-4">
+               <h4 class="section-title">Customize</h4>
+               <div>
+                  <label class="ms-switch">
+                  <input type="checkbox" id="dark-mode">
+                  <span class="ms-switch-slider round"></span>
+                  </label>
+                  <span> Dark Mode </span>
+               </div>
+
+            </div>
+            <div class="col-xl-4 col-md-4">
+               <h4 class="section-title">Keyboard Shortcuts</h4>
+               <p class="ms-directions mb-0"><code>Esc</code> Close Quick Bar</p>
+               <p class="ms-directions mb-0"><code>Alt + (1 -> 6)</code> Open Quick Bar Tab</p>
+               <p class="ms-directions mb-0"><code>Alt + Q</code> Enable Quick Bar Configure Mode</p>
+            </div>
+         </div>
+      </div>
+      <!-- Preloader -->
+      <div id="preloader-wrap">
+         <div class="spinner spinner-8">
+            <div class="ms-circle1 ms-child"></div>
+            <div class="ms-circle2 ms-child"></div>
+            <div class="ms-circle3 ms-child"></div>
+            <div class="ms-circle4 ms-child"></div>
+            <div class="ms-circle5 ms-child"></div>
+            <div class="ms-circle6 ms-child"></div>
+            <div class="ms-circle7 ms-child"></div>
+            <div class="ms-circle8 ms-child"></div>
+            <div class="ms-circle9 ms-child"></div>
+            <div class="ms-circle10 ms-child"></div>
+            <div class="ms-circle11 ms-child"></div>
+            <div class="ms-circle12 ms-child"></div>
+         </div>
+      </div>
+      <!-- Overlays -->
+      <div class="ms-aside-overlay ms-overlay-left ms-toggler" data-target="#ms-side-nav" data-toggle="slideLeft"></div>
+      <div class="ms-aside-overlay ms-overlay-right ms-toggler" data-target="#ms-recent-activity" data-toggle="slideRight"></div>
+      <!-- Sidebar Navigation Left -->
+      <aside id="ms-side-nav" class="side-nav fixed ms-aside-scrollable ms-aside-left">
+         <!-- Logo -->
+         <div class="logo-sn ms-d-block-lg">
+            <a class="pl-0 ml-0 text-center" href="../../index.html"> <img src="../../assets/img/medicede.png" alt="logo"> </a>
+            <a href="#" class="text-center ms-logo-img-link"> <img src="../../assets/img/dashboard/doctor-3.jpg" alt="logo"></a>
+            <h5 class="text-center text-white mt-2">Dr.Samuel</h5>
+            <h6 class="text-center text-white mb-3">Admin</h6>
+         </div>
+     <!-- Navigation -->
+    <ul class="accordion ms-main-aside fs-14" id="side-nav-accordion">
+      <!-- Dashboard -->
+      <li class="menu-item">
+        <a href="../../index.html" >
+          <span><i class="material-icons fs-16">dashboard</i>Dashboard </span>
+        </a>
+        <ul id="dashboard" class="collapse" aria-labelledby="dashboard" data-parent="#side-nav-accordion">
+          <li> <a href="index-2.html">Medjestic</a> </li>
+        </ul>
+      </li>
+      <!-- /Dashboard -->
+      
+      <!-- Patient -->
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#patient" aria-expanded="false" aria-controls="patient">
+          <span><i class="fas fa-user"></i>Patient</span>
+        </a>
+        <ul id="patient" class="collapse" aria-labelledby="patient" data-parent="#side-nav-accordion">
+          <li> <a href="../../pages/patient/add-patient.html">Add Patient</a> </li>
+          <li> <a href="../../pages/patient/patient-list.html">Patient List</a> </li>
+        </ul>
+      </li>
+      <!-- /Patient -->
+      
+
+      <!-- Report -->
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#report" aria-expanded="false" aria-controls="report">
+          <span><i class="fas fa-file-alt"></i>Report</span>
+        </a>
+        <ul id="report" class="collapse" aria-labelledby="report" data-parent="#side-nav-accordion">
+          <li> <a href="../../pages/report/patient-report.html">Patient Wise Report</a> </li>
+        </ul>
+      </li>
+      <!-- /Report -->
+      
+    </ul>
+  </aside>
+  
+      <!-- Main Content -->
+      <main class="body-content">
+         <!-- Navigation Bar -->
+         <nav class="navbar ms-navbar">
+           <div class="ms-aside-toggler ms-toggler pl-0" data-target="#ms-side-nav" data-toggle="slideLeft">
+             <span class="ms-toggler-bar bg-white"></span>
+             <span class="ms-toggler-bar bg-white"></span>
+             <span class="ms-toggler-bar bg-white"></span>
+           </div>
+           <div class="logo-sn logo-sm ms-d-block-sm">
+             <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="../../index-2.html"><img src="../../assets/img/medjestic-logo-84x41.png" alt="logo"> </a>
+           </div>
+           <ul class="ms-nav-list ms-inline mb-0" id="ms-nav-options">
+
+             
+             <li class="ms-nav-item ms-nav-user dropdown">
+               <a href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="ms-user-img ms-img-round float-right" src="../../assets/img/dashboard/doctor-3.jpg" alt="people"> </a>
+               <ul class="dropdown-menu dropdown-menu-right user-dropdown" aria-labelledby="userDropdown">
+                 <li class="dropdown-menu-header">
+                   <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, Dr Samuel Deo</span></h6>
+                 </li>
+                 <li class="dropdown-divider"></li>
+                 
+                 <li class="dropdown-divider"></li>
+                 <li class="dropdown-menu-footer">
+                   <a class="media fs-14 p-2" href="../prebuilt-pages/lock-screen.html"> <span><i class="flaticon-security mr-2"></i> Lock</span> </a>
+                 </li>
+                 <li class="dropdown-menu-footer">
+                   <a class="media fs-14 p-2" href="../prebuilt-pages/default-login.html"> <span><i class="flaticon-shut-down mr-2"></i> Logout</span> </a>
+                 </li>
+               </ul>
+             </li>
+           </ul>
+           <div class="ms-toggler ms-d-block-sm pr-0 ms-nav-toggler" data-toggle="slideDown" data-target="#ms-nav-options">
+             <span class="ms-toggler-bar bg-white"></span>
+             <span class="ms-toggler-bar bg-white"></span>
+             <span class="ms-toggler-bar bg-white"></span>
+           </div>
+         </nav>
+         <!-- Body Content Wrapper -->
+         <div class="ms-content-wrapper">
+            <div class="row">
+               <div class="col-md-12">
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb pl-0">
+                        <li class="breadcrumb-item"><a href="#"><i class="material-icons">home</i> Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Report</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Patient Report</li>
+                     </ol>
+                  </nav>
+               </div>
+               <div class="col-xl-12 col-md-12">
+                  <div class="ms-panel ms-panel-fh">
+                     <div class="ms-panel-header">
+                        <h6>Patient Report</h6>
+                     </div>
+                     <div class="ms-panel-body">
+                        <div class="table-responsive">
+                           <table class="table table-bordered thead-primary">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Patient ID</th>
+                                    <th scope="col">Patient Name</th>
+                                    <th scope="col">Mobile</th>
+                                    <th scope="col">Report Name</th>
+                                    <th scope="col">Report Date of Issue</th>
+                                    <th scope="col">Report URL</th>
+                                    <th scope="col">Transfered From</th>
+                                 </tr>
+                              </thead>
+                                <tbody  id="app2">
+                                  <tr></tr>
+                                </tbody>
+                           </table>
+                        </div>
+                          <template id="sample2">
+                            <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                          </template>
+
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </main>
+
+      <!-- SCRIPTS -->
+      <!-- Global Required Scripts Start -->
+      <script src="../../assets/js/jquery-3.3.1.min.js"></script>
+      <script src="../../assets/js/popper.min.js"></script>
+      <script src="../../assets/js/bootstrap.min.js"></script>
+      <script src="../../assets/js/perfect-scrollbar.js"> </script>
+      <script src="../../assets/js/jquery-ui.min.js"> </script>
+      <!-- Global Required Scripts End -->
+      <!-- Page Specific Scripts Start -->
+      <script src="../../assets/js/slick.min.js"> </script>
+      <script src="../../assets/js/moment.js"> </script>
+      <script src="../../assets/js/jquery.webticker.min.js"> </script>
+      <!-- Page Specific Scripts Finish -->
+      <!-- Medjestic core JavaScript -->
+      <script src="../../assets/js/framework.js"></script>
+      <!-- Settings -->
+      <script src="../../assets/js/settings.js"></script>
+   </body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyB_uZkfIWQBoD4DlDTnj_zDAVvAtZkKlX8",
+        authDomain: "govtsewa-d6fc4.firebaseapp.com",
+        databaseURL: "https://govtsewa-d6fc4-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "govtsewa-d6fc4",
+        storageBucket: "govtsewa-d6fc4.appspot.com",
+        messagingSenderId: "360650927524",
+        appId: "1:360650927524:web:d82c765890cf9316cce531"
+      };
+      firebase.initializeApp(firebaseConfig);
+
+      function showContent1(){
+        var temp1,copyHTML1,td1;
+        firebase.database().ref('Transfer/').on('value', function(snapshot){
+        snapshot.forEach(function(childNodes){
+            temp1 = document.getElementById("sample2").content;
+            copyHTML1 = document.importNode(temp1,true);
+            td = copyHTML1.querySelectorAll("td");
+            td[0].innerHTML = childNodes.val().PatID;
+            td[1].innerHTML = childNodes.val().Name;
+            td[2].innerHTML = childNodes.val().Mobile;
+            td[3].innerHTML = childNodes.val().ReportName;
+            td[4].innerHTML = childNodes.val().ReportDOI;
+            td[5].innerHTML = `<a style="color: blue;" href=${childNodes.val().URL}>View Report</a>`;
+            td[6].innerHTML = childNodes.val().From;
+            document.getElementById("app2").appendChild(copyHTML1);
+            });
+          });
+        }
+    
+    </script>
+
+</html>
