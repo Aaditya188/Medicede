@@ -11,7 +11,7 @@
 - CSS
 - Javascript
 - Firebase
-- Js2Pdf
+- Js2PDF
 
 ## Program Innovations :
 - End to End Encryption
